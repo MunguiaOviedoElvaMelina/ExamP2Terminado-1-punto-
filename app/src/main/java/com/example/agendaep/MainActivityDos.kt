@@ -16,6 +16,7 @@ class MainActivityDos : AppCompatActivity() {
         val nom=parExtras?.getString("nombre")
         //val nocon=parExtras?.getString("control")
         binding.txtContactoResultado.text=nom.toString()
+
         binding.btnSalir.setOnClickListener {
             val intento2= Intent(this,MainActivity::class.java)
             startActivity(intento2)
